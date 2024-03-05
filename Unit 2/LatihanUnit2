@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(){
+    int jmlhtransaksi;
+    int nominaltransaksi;
+    int totalpengeluaran = 0;
+
+    printf("masukkan jumlah transaksi : ");
+    scanf("%d", &jmlhtransaksi);
+
+    if(jmlhtransaksi<=0){
+        printf("tidak ada transaksi hari ini");
+    }else{
+        printf("masukkan nominal transaksi : ");
+
+        for(int i=0; i<jmlhtransaksi; i++){
+            scanf("%d", &nominaltransaksi);
+            totalpengeluaran += nominaltransaksi;
+        }
+        printf("total pengeluaran hari ini : %d", totalpengeluaran);
+    }
+    return 0;
+
+}
+
+
+
