@@ -45,7 +45,7 @@ int main() {
         if (periksaTebakan(bilanganTarget, tebakan)) {
             printf("Kamu melakukan %d percobaan.\n", percobaan);
             printf("Apakah kamu ingin bermain lagi? (Y/T): ");
-            scanf(" %c ", &mainLagi);
+            scanf("%c", &mainLagi);
             if (mainLagi == 'Y' || mainLagi == 'y') {
                 // Men-generate bilangan baru untuk permainan selanjutnya
                 bilanganTarget = bilanganAcak(bilanganMin, bilanganMax);
