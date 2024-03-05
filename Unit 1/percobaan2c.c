@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
-    printf("Alpro itu mudah!");
+printf("Alpro itu mudah!");
     return 0;
-}
+
+//kode tersebut error karena tidak terdapat fungsi (int main) sehingga program tidak dapat dijalankan
